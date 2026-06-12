@@ -15,3 +15,7 @@ M1 starts with the AP-42 fixed-roof Example 1 and floating-roof Examples 3 and 4
 ## 2026-06-12 - Curate AP-42 Property Tables Instead of Vendoring Raw Extraction
 
 The properties module includes a small tested subset of AP-42 product and paint constants needed for the current physics examples and scenario defaults. The raw extracted AP-42 text remains local-only, while constants in code are tied to regression tests and can be expanded deliberately.
+
+## 2026-06-12 - Start M2 With an Offline Synthetic Scenario Generator
+
+The first data-pipeline slice generates deterministic synthetic Klaipeda meteorology and tank operations using only public assumptions and random seeds. This keeps M2 runnable in CI and protects the no-KN-data rule. A later fetch script can replace synthetic meteorology with cached public Open-Meteo data while preserving the same downstream schema.

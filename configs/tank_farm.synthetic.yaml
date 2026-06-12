@@ -1,0 +1,50 @@
+scenario_id: klaipeda_synthetic_v1
+year: 2025
+seed: 42
+location:
+  name: Klaipeda synthetic terminal
+  latitude: 55.7033
+  longitude: 21.1443
+  timezone: Europe/Vilnius
+products:
+  - product_id: gasoline_summer
+    property_key: gasoline_rvp_7
+    annual_turnovers: 18
+  - product_id: gasoline_winter
+    property_key: gasoline_rvp_13
+    annual_turnovers: 16
+  - product_id: diesel
+    property_key: distillate_fuel_oil_no_2
+    annual_turnovers: 12
+  - product_id: methanol
+    property_key: methanol
+    annual_turnovers: 10
+tanks:
+  - tank_id: TK-101
+    roof_type: fixed_cone
+    diameter_ft: 90
+    shell_height_ft: 42
+    working_height_ft: 38
+    paint: white
+    product_id: gasoline_summer
+  - tank_id: TK-102
+    roof_type: internal_floating
+    diameter_ft: 110
+    shell_height_ft: 48
+    working_height_ft: 44
+    paint: white
+    product_id: gasoline_winter
+  - tank_id: TK-201
+    roof_type: fixed_cone
+    diameter_ft: 120
+    shell_height_ft: 52
+    working_height_ft: 48
+    paint: gray_light
+    product_id: diesel
+  - tank_id: TK-301
+    roof_type: fixed_cone
+    diameter_ft: 70
+    shell_height_ft: 36
+    working_height_ft: 32
+    paint: white
+    product_id: methanol
