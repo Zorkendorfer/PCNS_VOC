@@ -10,6 +10,12 @@ from tankloss.data.scenario import (
     generate_tank_operations,
     write_scenario_csv,
 )
+from tankloss.data.training import (
+    ProductState,
+    build_daily_truth_dataset,
+    build_default_daily_truth_dataset,
+    write_training_csv,
+)
 
 __all__ = [
     "ProductConfig",
@@ -20,4 +26,8 @@ __all__ = [
     "generate_hourly_meteorology",
     "generate_tank_operations",
     "write_scenario_csv",
+    "ProductState",
+    "build_daily_truth_dataset",
+    "build_default_daily_truth_dataset",
+    "write_training_csv",
 ]

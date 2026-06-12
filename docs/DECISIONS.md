@@ -19,3 +19,7 @@ The properties module includes a small tested subset of AP-42 product and paint 
 ## 2026-06-12 - Start M2 With an Offline Synthetic Scenario Generator
 
 The first data-pipeline slice generates deterministic synthetic Klaipeda meteorology and tank operations using only public assumptions and random seeds. This keeps M2 runnable in CI and protects the no-KN-data rule. A later fetch script can replace synthetic meteorology with cached public Open-Meteo data while preserving the same downstream schema.
+
+## 2026-06-12 - Generate Daily Truth Rows From AP-42 Physics
+
+Training data are generated as daily tank rows because AP-42 fixed-roof temperature and solar terms are daily. Each day aggregates hourly synthetic meteorology and operations, annualizes that day's throughput for AP-42 turnover-sensitive equations, then reports daily-equivalent component losses. This creates a stable supervised dataset for M3 while preserving traceability to the AP-42 truth model.
