@@ -23,6 +23,19 @@ from tankloss.physics.fixed_roof import (
     vapor_space_volume,
     working_loss,
 )
+from tankloss.physics.floating_roof import (
+    DeckFitting,
+    FloatingRoofResult,
+    deck_fitting_loss,
+    deck_fitting_loss_factor,
+    deck_seam_loss,
+    floating_roof_losses,
+    liquid_density_from_weight_fractions,
+    rim_seal_loss,
+    total_deck_fitting_loss_factor,
+    vapor_pressure_function,
+    withdrawal_loss,
+)
 
 __all__ = [
     "AP42_IDEAL_GAS_R",
@@ -46,4 +59,15 @@ __all__ = [
     "vapor_space_saturation_factor",
     "vapor_space_volume",
     "working_loss",
+    "DeckFitting",
+    "FloatingRoofResult",
+    "deck_fitting_loss",
+    "deck_fitting_loss_factor",
+    "deck_seam_loss",
+    "floating_roof_losses",
+    "liquid_density_from_weight_fractions",
+    "rim_seal_loss",
+    "total_deck_fitting_loss_factor",
+    "vapor_pressure_function",
+    "withdrawal_loss",
 ]

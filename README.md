@@ -7,8 +7,9 @@ The project starts from a fixed-roof tank physics core and will grow toward the 
 ## Current Status
 
 - AP-42 Chapter 7.1 fixed-roof equations implemented for vertical cone-roof tanks.
+- AP-42 floating-roof equations implemented for external and internal floating roof tanks.
 - Raoult-law mixture vapor pressure and vapor molecular weight helpers.
-- AP-42 Example 1 regression tests for the fixed-roof calculation chain.
+- AP-42 Example 1, Example 3, and Example 4 regression tests.
 - GitHub Actions CI running the pytest suite on Python 3.11.
 
 ## Development
